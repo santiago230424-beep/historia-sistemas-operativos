@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Historia de los Sistemas Operativos</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0f4c81,#1f7ae0);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+nav{
+    background:#183153;
+    padding:15px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:25px;
+    margin-bottom:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#0f4c81;
+    margin-bottom:15px;
+}
+
+.timeline{
+    position:relative;
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline::after{
+    content:'';
+    position:absolute;
+    width:6px;
+    background:#1f7ae0;
+    top:0;
+    bottom:0;
+    left:50%;
+    margin-left:-3px;
+}
+
+.container{
+    padding:10px 40px;
+    position:relative;
+    width:50%;
+}
+
+.left{
+    left:0;
+}
+
+.right{
+    left:50%;
+}
+
+.container::after{
+    content:'';
+    position:absolute;
+    width:25px;
+    height:25px;
+    right:-17px;
+    background:white;
+    border:4px solid #1f7ae0;
+    top:15px;
+    border-radius:50%;
+    z-index:1;
+}
+
+.right::after{
+    left:-16px;
+}
+
+.content{
+    padding:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+button{
+    padding:12px 20px;
+    background:#1f7ae0;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+button:hover{
+    background:#0f4c81;
+}
+
+#datoCurioso{
+    margin-top:15px;
+    font-weight:bold;
+    color:#0f4c81;
+}
+
+footer{
+    text-align:center;
+    background:#183153;
+    color:white;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media screen and (max-width:768px){
+
+.timeline::after{
+left:31px;
+}
+
+.container{
+width:100%;
+padding-left:70px;
+padding-right:25px;
+}
+
+.container::after{
+left:15px;
+}
+
+.right{
+left:0;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Historia de los Sistemas Operativos</h1>
+    <p>Evolución y desarrollo de los sistemas operativos a través del tiempo</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#introduccion">Introducción</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#actualidad">Actualidad</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+    </ul>
+</nav>
+
+<section id="introduccion">
+    <div class="card">
+        <h2>¿Qué es un Sistema Operativo?</h2>
+        <p>
+            Un sistema operativo es el software principal de una computadora. 
+            Administra los recursos del hardware, permite ejecutar programas y 
+            facilita la interacción entre el usuario y el equipo.
+        </p>
+    </div>
+</section>
+
+<section id="historia">
+    <h2 style="text-align:center;">Línea de Tiempo</h2>
+
+    <div class="timeline">
+
+        <div class="container left">
+            <div class="content">
+                <h3>1950 - Sistemas por Lotes</h3>
+                <p>
+                    Las primeras computadoras utilizaban sistemas de procesamiento
+                    por lotes donde las tareas se ejecutaban una tras otra.
+                </p>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="content">
+                <h3>1960 - Multiprogramación</h3>
+                <p>
+                    Surgen sistemas capaces de ejecutar múltiples procesos para
+                    aprovechar mejor los recursos.
+                </p>
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="content">
+                <h3>1969 - UNIX</h3>
+                <p>
+                    Desarrollado por Ken Thompson y Dennis Ritchie en Bell Labs.
+                    Se convirtió en uno de los sistemas operativos más influyentes.
+                </p>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="content">
+                <h3>1981 - MS-DOS</h3>
+                <p>
+                    Microsoft lanza MS-DOS para las computadoras IBM PC.
+                </p>
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="content">
+                <h3>1985 - Windows</h3>
+                <p>
+                    Microsoft presenta Windows con interfaz gráfica.
+                </p>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="content">
+                <h3>1991 - Linux</h3>
+                <p>
+                    Linus Torvalds desarrolla Linux, uno de los proyectos de
+                    código abierto más importantes de la historia.
+                </p>
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="content">
+                <h3>2007 - Android</h3>
+                <p>
+                    Android comienza su expansión en dispositivos móviles.
+                </p>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="content">
+                <h3>Actualidad</h3>
+                <p>
+                    Windows, Linux, macOS, Android e iOS dominan el mercado de
+                    sistemas operativos.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="actualidad">
+    <div class="card">
+        <h2>Sistemas Operativos Actuales</h2>
+
+        <ul>
+            <li><strong>Windows:</strong> Muy utilizado en computadores personales.</li>
+            <li><strong>Linux:</strong> Popular en servidores y desarrollo.</li>
+            <li><strong>macOS:</strong> Sistema operativo de Apple.</li>
+            <li><strong>Android:</strong> Líder en teléfonos móviles.</li>
+            <li><strong>iOS:</strong> Sistema operativo de iPhone y iPad.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="curiosidades">
+    <div class="card">
+        <h2>Dato Curioso</h2>
+
+        <button onclick="mostrarDato()">
+            Mostrar Curiosidad
+        </button>
+
+        <p id="datoCurioso"></p>
+    </div>
+</section>
+
+<footer>
+    <p>Aplicación Web Educativa - Historia de los Sistemas Operativos © 2026</p>
+</footer>
+
+<script>
+const datos = [
+"UNIX influyó en Linux, macOS y muchos otros sistemas operativos modernos.",
+"Linux se utiliza en la mayoría de los servidores de Internet.",
+"Android está basado en el núcleo Linux.",
+"El primer Windows fue lanzado en 1985.",
+"Más del 70% de los teléfonos inteligentes utilizan Android."
+];
+
+function mostrarDato(){
+    let numero = Math.floor(Math.random() * datos.length);
+    document.getElementById("datoCurioso").innerHTML = datos[numero];
+}
+</script>
+
+</body>
+</html>
